@@ -1,0 +1,170 @@
+#tic-tac-toe {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+.form-control{
+  border-color: blue;
+  border-radius: 20%;
+}
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-item {
+  margin: 20px;
+  border-color: blue;
+}
+.form-group .form-item {
+  margin-right: 50px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  padding: 10px;
+}
+
+.game-board {
+  width: 500px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.game-board.x .cell:not(.x):not(.circle):hover::after {
+  opacity: 0.2;
+}
+
+.game-board.circle .cell:not(.x):not(.circle):hover::after {
+  opacity: 0.2;
+}
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+
+.cell.x::after,
+.game-board.x .cell:not(.x):not(.circle):hover::after {
+  content: url("../public/Tic-Tac-Toe/crs.png");
+  height: 50px;
+  width: 50px;
+}
+
+.cell.circle::after,
+.game-board.circle .cell:not(.x):not(.circle):hover::after {
+  content: url("../public/Tic-Tac-Toe/cr.png");
+  height: 50px;
+  width: 50px;
+}
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(26, 25, 25, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.winning-message button {
+  cursor: pointer;
+}
+
+.winning-message.show {
+  display: flex;
+}
+h1 {
+  text-align: center;
+  color: rgb(249, 127, 127);
+  background-color: bisque;
+  height: 50px;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #tic-tac-toe {
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 50px; /* Reduce top margin */
+    margin-bottom: 50px; /* Reduce bottom margin */
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack form items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .form-item {
+    margin: 10px; /* Reduce margin for form items */
+  }
+
+  .form-group .form-item {
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .game-board {
+    width: 100%; /* Make game board full width */
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .cell {
+    width: 80px; /* Reduce cell size */
+    height: 80px; /* Reduce cell size */
+  }
+
+  .winning-message {
+    font-size: 3rem; /* Reduce font size for winning message */
+  }
+
+  .winning-message button {
+    font-size: 1rem; /* Adjust button font size */
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .game-board {
+    width: 80%; /* Make game board responsive */
+    max-width: 500px; /* Limit maximum width */
+  }
+
+  .cell {
+    width: 90px; /* Adjust cell size for tablets */
+    height: 90px; /* Adjust cell size for tablets */
+  }
+
+  .winning-message {
+    font-size: 4rem; /* Adjust font size for winning message */
+  }
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.meditation-app {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+
+
+.meditation-time-select,
+.meditation-sound-picker {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.meditation-time-select button,
+.meditation-sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+
+.meditation-sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.meditation-sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+
+.meditation-sound-picker button:nth-child(2) {
+  background: #a14f49;
+}
+
+.meditation-sound-picker button img {
+  height: 100%;
+}
+
+.meditation-time-select button:hover {
+  background: white;
+  color: black;
+}
+
+.meditation-player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.meditation-player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.meditation-player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+
+.meditation-time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 5%;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+
+.meditation-play {
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+.meditation-replay {
+  cursor: pointer;
+  padding-top: 150px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .meditation-app {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .meditation-player-container {
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .meditation-time-select button,
+  .meditation-sound-picker button {
+    width: 80%; /* Increase button width on smaller screens */
+  }
+
+  .meditation-time-display {
+    font-size: 30px; /* Decrease font size for time display */
+  }
+}
+
+@media (max-width: 480px) {
+  .meditation-time-display {
+    font-size: 24px; /* Further decrease font size for very small screens */
+  }
+}

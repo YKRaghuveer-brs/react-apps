@@ -1,0 +1,155 @@
+/* .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.formMiddleBlock {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.brandSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.radioGroup {
+  margin-bottom: 15px;
+}
+
+.passwordStrength {
+  margin: 10px 0;
+}
+
+.strength-bar {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+.strength-1 {
+  background-color: #ff3e36; 
+}
+
+.strength-2 {
+  background-color: #ff691f; 
+}
+
+.strength-3 {
+  background-color: #ffda36; 
+}
+
+.strength-4 {
+  background-color: #0be881; 
+}
+
+.submit-button {
+  width: 100%;
+}
+.p1-form{
+  top:45% ;
+}
+.pagination-section{
+  padding-left: 25%;
+} */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.formMiddleBlock {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.brandSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.radioGroup {
+  margin-bottom: 15px;
+}
+
+.passwordStrength {
+  margin: 10px 0;
+}
+
+.strength-bar {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+.strength-1 {
+  background-color: #ff3e36; /* Very Weak */
+}
+
+.strength-2 {
+  background-color: #ff691f; /* Weak */
+}
+
+.strength-3 {
+  background-color: #ffda36; /* Good */
+}
+
+.strength-4 {
+  background-color: #0be881; /* Strong */
+}
+
+.submit-button {
+  width: 100%;
+}
+
+.p1-form {
+  top: 45%;
+}
+
+.radio-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.horizontal-radio .ant-radio-button-wrapper {
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.h1-section3{
+  margin-top: 2%;
+}
+.h1-section2{
+  margin-top: 2%;
+}
+.h1-section{
+  margin-top: 3%;
+}
+.calender{
+  margin-left: 20%;
+}
+.submit-final{
+  margin-left: 35%;
+}

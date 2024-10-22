@@ -1,0 +1,55 @@
+/* FirstComponent2.css */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+  }
+  
+  .Grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brandSection {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+  }
+  
+  .plan {
+    margin-bottom: 10px;
+  }
+  
+  .plan-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  #sel_opt {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #feb47b;
+  }
+  
+  #error1,
+  #error2 {
+    color: red;
+    font-size: 12px;
+  }
+  
